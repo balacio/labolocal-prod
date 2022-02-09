@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Labolocal manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="topnav">
+	<h1>Labolocal manager</h1>
+  </div>
+  <div class="content">
+	<div class="card-grid">
+	  <div class="card">
+		<form action="/" method="POST">
+		  <p>
+			<label for="ssid">SSID</label>
+			<input type="text" id ="ssid" name="ssid" value="Livebox-C396"><br>
+			<!-- drop down menu using: -->
+			<!-- https://techtutorialsx.com/2018/10/05/esp32-web-server-template-processing-when-serving-html-from-file-system/ -->
+			<label for="ssidKey">Password</label>
+			<input type="text" id ="ssidKey" name="ssidKey" value="XcDhRvsPgdr7PGy7rM"><br>
+			<label for="timezone">Timezone</label>
+				<select id ="timezone" name="timezone">
+					<option value="UTC0">UTC</option>
+					<option value="EST-10EDT-11,M10.5.0/02:00:00,M3.5.0/03:00:00">Australia | Melbourne, Canberra, Sydney</option>
+					<option value="WST-8">Australia | Perth</option>
+					<option value="EST-10">Australia | Brisbane</option>
+					<option value="CST-9:30CDT-10:30,M10.5.0/02:00:00,M3.5.0/03:00:00">Australia | Adelaide</option>
+					<option value="CST-9:30">Australia | Darwin</option>
+					<option value="EST-10EDT-11,M10.1.0/02:00:00,M3.5.0/03:00:00">Australia | Hobart</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Amsterdam, Netherlands</option>
+					<option value="EET-2EEST-3,M3.5.0/03:00:00,M10.5.0/04:00:00">Europe | Athens, Greece</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Barcelona, Spain</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Berlin, Germany</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Brussels, Belgium</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Budapest, Hungary</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Copenhagen, Denmark</option>
+					<option value="GMT+0IST-1,M3.5.0/01:00:00,M10.5.0/02:00:00">Europe | Dublin, Ireland</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Geneva, Switzerland</option>
+					<option value="EET-2EEST-3,M3.5.0/03:00:00,M10.5.0/04:00:00">Europe | Helsinki, Finland</option>
+					<option value="EET-2EEST,M3.5.0/3,M10.5.0/4">Europe | Kyiv, Ukraine</option>
+					<option value="WET-0WEST-1,M3.5.0/01:00:00,M10.5.0/02:00:00">Europe | Lisbon, Portugal</option>
+					<option value="GMT+0BST-1,M3.5.0/01:00:00,M10.5.0/02:00:00">Europe | London, GreatBritain</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Madrid, Spain</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Oslo, Norway</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Paris, France</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Prague, CzechRepublic</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Roma, Italy</option>
+					<option value="MSK-3MSD,M3.5.0/2,M10.5.0/3">Europe | Moscow, Russia</option>
+					<option value="MST-3MDT,M3.5.0/2,M10.5.0/3">Europe | St.Petersburg, Russia</option>
+					<option value="CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00">Europe | Stockholm, Sweden</option>
+					<option value="NZST-12NZDT-13,M9.4.0/02:00:00,M4.1.0/03:00:00">New Zealand | Auckland, Wellington</option>
+					<option value="HAW10">USA & Canada | Hawaii Time</option>
+					<option value="AKST9AKDT">USA & Canada | Alaska Time</option>
+					<option value="PST8PDT">USA & Canada | Pacific Time</option>
+					<option value="MST7MDT">USA & Canada | Mountain Time</option>
+					<option value="MST7">USA & Canada | Mountain Time (Arizona, no DST)</option>
+					<option value="CST6CDT">USA & Canada | Central Time</option>
+					<option value="EST5EDT">USA & Canada | Eastern Time</option>
+					<option value="AST4ADT">Atlantic | Atlantic Time</option>
+					<option value="WIB-7">Asia | Jakarta</option>
+					<option value="GMT+2">Asia | Jerusalem</option>
+					<option value="SGT-8">Asia | Singapore</option>
+					<option value="ULAT-8ULAST,M3.5.0/2,M9.5.0/2">Asia | Ulaanbaatar,  Mongolia</option>
+					<option value="BRST+3BRDT+2,M10.3.0,M2.3.0">Central and South America | Brazil, Sao Paulo</option>
+					<option value="UTC+3">Central and South America | Argentina</option>
+					<option value="CST+6">Central and South America | Central America</option>
+				</select><br>
+			<label for="ulogin">User Email</label>
+			<input type="text" id ="ulogin" name="ulogin" value="jon.agostini@gmail.com"><br>
+			<label for="upass">User Password</label>
+			<input type="text" id ="upass" name="upass" value="jon.agostini"><br>
+			<label for="apiKey">API KEY</label>
+			<input type="text" id ="apiKey" name="apiKey" value="AIzaSyDJG_Jd46xIeCSZTARjioott_IdZ-4MEgE"><br>
+			<label for="rtdbURL">RTDB URL</label>
+			<input type="text" id ="rtdbURL" name="rtdbURL" value="https://labolocal-prod-v2-default-rtdb.europe-west1.firebasedatabase.app/"><br>
+			<input type ="submit" value ="Submit"><br>
+			<!-- build a redirect button to labolocal.com + link to OTA -->
+		  </p>
+		</form>
+	  </div>
+	</div>
+  </div>
+</body>
+</html>

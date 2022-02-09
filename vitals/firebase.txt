@@ -1,0 +1,27 @@
+Livebox-C396
+XcDhRvsPgdr7PGy7rM
+
+Livebox-C396_5GHz
+XcDhRvsPgdr7PGy7rM
+
+Chance The Router
+Q4YJ7MHSC7JqzxuEk9
+
+login: econologiste@gmail.com
+mdp: econologiste
+UID: 
+API: AIzaSyDJG_Jd46xIeCSZTARjioott_IdZ-4MEgE
+RTDB: https://labolocal-prod-v2-default-rtdb.europe-west1.firebasedatabase.app/
+
+
+#define WIFI_SSID "Livebox-C396"
+#define WIFI_PASSWORD "XcDhRvsPgdr7PGy7rM"
+
+#define USER_EMAIL "econologiste@gmail.com"
+#define USER_PASSWORD "econologiste"
+
+#define USER_EMAIL "jon.agostini@gmail.com"
+#define USER_PASSWORD "jon.agostini"
+
+#define API_KEY "AIzaSyDJG_Jd46xIeCSZTARjioott_IdZ-4MEgE"
+#define DATABASE_URL "https://labolocal-prod-v2-default-rtdb.europe-west1.firebasedatabase.app/"

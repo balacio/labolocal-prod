@@ -1,0 +1,18 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+	apiKey: "AIzaSyDJG_Jd46xIeCSZTARjioott_IdZ-4MEgE",
+	authDomain: "labolocal-prod-v2.firebaseapp.com",
+	databaseURL: "https://labolocal-prod-v2-default-rtdb.europe-west1.firebasedatabase.app",
+	projectId: "labolocal-prod-v2",
+	storageBucket: "labolocal-prod-v2.appspot.com",
+	messagingSenderId: "301647033434",
+	appId: "1:301647033434:web:fcbcf2b4178bdca89e5463"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);

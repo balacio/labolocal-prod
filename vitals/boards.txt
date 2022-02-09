@@ -1,0 +1,14 @@
+1: ESP8266
+	MAC: 38:2b:78:03:8a:96
+2: ESP8266
+	MAC: 38:2b:78:03:82:35
+3: ESP32
+	MAC: 24:6f:28:a7:2b:84
+4 : ESP32
+
+
+MAC address public range
+x2-xx-xx-xx-xx-xx
+x6-xx-xx-xx-xx-xx
+xA-xx-xx-xx-xx-xx
+xE-xx-xx-xx-xx-xx

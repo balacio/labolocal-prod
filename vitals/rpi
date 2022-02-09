@@ -1,0 +1,20 @@
+bob@labo.local
+3c0nolog1ste!!??
+github
+e: hello@labolocal.com
+p: 3c0n0l0g1st3
+user: therealago
+
+x rasp-ap
+x vim
+Node-RED
+Node-RED Dashboard
+Mosquitto Broker
+
+x ssh
+x change user + hostname: econologiste@labo.local
+x .vimrc
+x .bash_aliases
+
+Autostart Node-RED on boot
+	sudo systemctl enable nodered.service
